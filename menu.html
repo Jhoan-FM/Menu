@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú Banco </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://solodinero.com/wp-content/uploads/sites/8/2024/10/bank-of-america-cierra-sucursales-por-3-dias-conoce-las-fechas-oficiales-2246181653-e1729004985309.jpg?w=2600') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .navbar {
+            background-color: #0033a0;
+            display: flex;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        .navbar img {
+            height: 50px;
+        }
+        .menu {
+            list-style: none;
+            display: flex;
+            margin-left: auto;
+        }
+        .menu li {
+            position: relative;
+        }
+        .menu a {
+            text-decoration: none;
+            color: white;
+            padding: 15px 20px;
+            display: block;
+        }
+        .menu a:hover {
+            background-color: #002275;
+        }
+        .submenu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            list-style: none;
+            padding: 0;
+            top: 100%;
+            left: 0;
+            min-width: 200px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .submenu li {
+            border-bottom: 1px solid #ddd;
+        }
+        .submenu a {
+            color: #0033a0;
+            padding: 10px;
+        }
+        .menu li:hover .submenu {
+            display: block;
+        }
+        
+       
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+                background: #0033a0;
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: 60px;
+                display: none;
+            }
+            .menu li {
+                text-align: center;
+            }
+            .menu-toggle {
+                display: none;
+            }
+            .menu:target {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="https://static.vecteezy.com/system/resources/previews/013/948/727/non_2x/bank-icon-logo-design-vector.jpg" alt="Banco de Jhoan Figuereo"><h1>JR_BANK</h1>
+        <a href="#menu" class="menu-toggle">☰</a>
+        <ul id="menu" class="menu">
+            <li><a href="#">Inicio</a></li>
+            <li>
+                <a href="#">Productos</a>
+                <ul class="submenu">
+                    <li><a href="#">Cuentas</a></li>
+                    <li><a href="#">Tarjetas</a></li>
+                    <li><a href="#">Préstamos</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Servicios</a>
+                <ul class="submenu">
+                    <li><a href="#">Banca en línea</a></li>
+                    <li><a href="#">Seguros</a></li>
+                    <li><a href="#">Remesas</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Contacto</a>
+                <ul class="submenu">
+                    <li><a href="#">Sucursales</a></li>
+                    <li><a href="#">Atención al cliente</a></li>
+                    <li><a href="#">Soporte</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <footer>
+        <p>&copy;semestre 2025, Mi primera Página Web. Todos los derechos reservados para Jhoan Figuereo.</p>
+    </footer>
+</body>
+</html>
